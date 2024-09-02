@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Index"""
-from web_flask.routes import app_routes
+from web_flask.views import app_views
 
 
-@app_routes.route('/status', strict_slashes=False)
+@app_views.route('/status', strict_slashes=False)
 def status():
     """Returns a JSON status message"""
     return "Test Passed"
