@@ -7,4 +7,5 @@ class Category(BaseModel):
     """Class for managing category objects"""
 
     name = ""
+    product_id = ""
     description = ""
