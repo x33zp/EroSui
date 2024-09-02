@@ -7,4 +7,5 @@ class Order(BaseModel):
     """Class for managing order objects"""
 
     user_id = ""
-    description = ""
+    status = ""
+    total_price = 0
