@@ -3,7 +3,7 @@
 from models.base_model import BaseModel
 
 
-class Category(BaseModel):
+class Cart(BaseModel):
     """Class for managing cart objects"""
 
     user_id = ""
