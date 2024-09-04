@@ -5,6 +5,7 @@ from web_flask.views import app_views
 from web_flask.auth import app_auth
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = 'abcdefghijk lmnopqrst'
 app.register_blueprint(app_views, url_prefix='/')
 app.register_blueprint(app_auth, url_prefix='/')
 
