@@ -6,6 +6,7 @@ from web_flask.views import app_views
 from web_flask.auth import app_auth
 from os import path
 
+
 db = SQLAlchemy()
 DB_NAME = 'database.db'
 
@@ -30,6 +31,7 @@ def create_database(app):
             db.create_all()
             print('Created Database!')
 
+            
 if __name__ == "__main__":
     app = create_app()
     app.run(host='0.0.0.0', port='5000', threaded=True, debug=True)
