@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """Index"""
+from flask import render_template
 from web_flask.views import app_views
 
 
-@app_views.route('/status', strict_slashes=False)
+@app_views.route('/', strict_slashes=False)
 def status():
-    """Returns a JSON status message"""
-    return "Test Passed"
+    return render_template('home.html')
