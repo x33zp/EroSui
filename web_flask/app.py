@@ -1,14 +1,10 @@
 #!/usr/bin/python3
 """Flask App"""
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from web_flask.views import app_views
 from web_flask.auth import app_auth
 from os import path
 
-
-db = SQLAlchemy()
-DB_NAME = 'database.db'
 
 def create_app():
     app = Flask(__name__)
